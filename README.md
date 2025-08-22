@@ -1,12 +1,13 @@
 # 🎲 NUMBER GUESSING GAME 
 
+PROJECT LEVEL - BASIC ✔️
 
 A fun and interactive **Number Guessing Game** built using **HTML, CSS, and JavaScript**.  
 The player has to guess a randomly generated number within a given range.  
 
 ---
 
-## 🚀 Features
+## 🚀 FEATURE 
 
 - Random number generation every time you start  
 - User input validation  
@@ -16,7 +17,7 @@ The player has to guess a randomly generated number within a given range.
 
 ---
 
-## 🖥️ Demo
+## 🖥️ D E M O
 
 - Enter your guess in the input box  
 - Get feedback (**Correct**, **Too High**, **Too Low**)  
@@ -25,7 +26,7 @@ The player has to guess a randomly generated number within a given range.
 ---
 
 
-## 📂 Project Structur
+## 📂PROJECT STRUCTURE 
 
 📦 Number-Guessing-Game
 ┣ 📜 index.html
@@ -33,7 +34,7 @@ The player has to guess a randomly generated number within a given range.
 ┗ 📜 script.js
 
 
-🛠️ Technologies Used
+🛠️ TECH STACK 
 
 HTML5
 CSS3
