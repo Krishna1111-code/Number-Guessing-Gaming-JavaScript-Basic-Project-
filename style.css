@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Main Container */
+#main {
+    max-width: 600px;
+    width: 90%;
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 174, 255, 0.6);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+#heading {
+    text-align: center;
+    color: rgb(0, 174, 255);
+    letter-spacing: 1px;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Underline */
+#mini_underline_div {
+    height: 2px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Generate Button */
+#button_div {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+#button_div button {
+    padding: 12px 50px;
+    border-radius: 20px;
+    background-color: gray;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s all ease;
+    border: none;
+    cursor: pointer;
+}
+
+#button_div button:hover {
+    transform: scale(1.05);
+    color: rgb(0, 255, 0);
+    background-color: #444;
+}
+
+/* Input and Submit Button */
+#input_div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    flex: 1;
+    min-width: 120px;
+}
+
+#submit {
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s all ease;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: yellow;
+    transform: scale(1.05);
+}
+
+/* Final Answer Styling */
+.final_ans_right,
+.final_ans_wrong {
+    color: yellow;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Good Job Text */
+#good_job {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    display: none;
+    animation: popUp 0.6s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes popUp {
+    0% {transform: scale(0.5); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #heading {
+        font-size: 24px;
+    }
+
+    #button_div button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    #good_job {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #heading {
+        font-size: 20px;
+    }
+
+    #button_div button {
+        padding: 8px 20px;
+    }
+
+    #submit {
+        padding: 10px 20px;
+    }
+
+    #good_job {
+        font-size: 30px;
+    }
+}
